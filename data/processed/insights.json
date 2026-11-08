@@ -1,0 +1,346 @@
+{
+  "why_start": {
+    "question": "Why do people start a SIP, and what do they expect to happen?",
+    "stats": "why_started: long_term_wealth: 115 (4%); finfluencer_youtube: 68 (3%); specific_goal: 27 (1%); peers_colleagues: 10 (0%); tax_saving: 5 (0%); family: 5 (0%)\nexpectation: specific_high_return: 153 (6%); moderate_return: 131 (5%); never_loss: 59 (2%); no_expectation: 1 (0%)\ninfluencer: finfluencer: 209 (8%); self: 184 (7%); friend_family: 9 (0%); app_ad: 1 (0%); employer: 1 (0%)",
+    "findings": [
+      {
+        "headline": "A total of 115 individuals started an SIP to build long-term wealth.",
+        "detail": "Note that this is based on a total sample of 2,621 items, with long-term wealth being a primary motivator alongside smaller categories like tax savings and family.",
+        "evidence_ids": [
+          "YO-c15fd775f6",
+          "YO-16efe533fe",
+          "YO-f775d3c46d"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Finfluencers and YouTube content drove 68 people to begin their SIP journeys.",
+        "detail": "Content creators play a notable role in inspiring beginners to take action, though personal research and self-guidance also motivate investors.",
+        "evidence_ids": [
+          "YO-16efe533fe",
+          "YO-ac9f063976",
+          "YO-9d2b04fe4b"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Expectations of specific high returns were held by 153 respondents, while 59 expected never to experience a loss.",
+        "detail": "These figures highlight varying risk perceptions and return targets among participants, with smaller segments showing no expectations at all.",
+        "evidence_ids": [
+          "YO-1116aef2f3",
+          "YO-74d2a18356",
+          "YO-84e14d9c4a"
+        ],
+        "dropped_citations": 0
+      }
+    ]
+  },
+  "what_changes": {
+    "question": "What changes in their behaviour in the months after starting?",
+    "stats": "drop events by stage: Before start: 6 (top theme App bugs, delays or poor support); Setting up: 24 (top theme Failed instalment or mandate problem); First debit: 1 (top theme Failed instalment or mandate problem); Months 1–3: 28 (top theme Returns lower than expected); Months 4–6: 1 (top theme Anxiety from checking red numbers); Months 7–12: 24 (top theme Returns lower than expected); After a year: 83 (top theme App bugs, delays or poor support)\nevents: continuing: 559 (21%); started: 208 (8%); considering_stop: 204 (8%); stopped: 198 (8%); failed_instalment: 154 (6%); switched_platform: 69 (3%); paused: 9 (0%); switched_fund: 8 (0%)",
+    "findings": [
+      {
+        "headline": "Within the first few months, 28 drop events occurred with returns lower than expected as the top theme.",
+        "detail": "Users face anxiety and look at alternatives when their portfolio shows negative returns or losses after a year of investing.",
+        "evidence_ids": [
+          "YO-d6d01401ac",
+          "YO-e4e154da44",
+          "YO-ae2206c58a"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "A total of 154 instances of failed instalments highlight ongoing friction with autopay mandates and bank server issues.",
+        "detail": "Users frequently report unexpected bank charges, difficulties changing default accounts, and mandates continuing to deduct money after cancellation.",
+        "evidence_ids": [
+          "YO-26d1a85d39",
+          "PL-74bcce9fdd",
+          "YO-b137b6df57",
+          "YO-8d64f9e302"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Out of the total events, 198 accounts for stopped users where app bugs and payment mandate failures disrupted the experience.",
+        "detail": "Customers trying to stop their SIPs often struggle with understanding how to retrieve their invested amount or face issues with delayed refunds.",
+        "evidence_ids": [
+          "YO-0838ea72fa",
+          "YO-6e200907a6",
+          "PL-17eaca64b7"
+        ],
+        "dropped_citations": 0
+      }
+    ]
+  },
+  "why_stop": {
+    "question": "What leads investors to pause, reduce or stop a SIP?",
+    "stats": "among drop events, primary themes: app_trust_ops: 285 (44%); failed_payment_mandate: 113 (18%); expectation_mismatch: 78 (12%); clutter_cross_sell: 38 (6%); confusing_metrics: 32 (5%); market_fall_trigger: 27 (4%); fund_choice_doubt: 15 (2%); cash_flow_life_event: 12 (2%)\nopportunity scores: App bugs, delays or poor support=22; Failed instalment or mandate problem=10; Returns lower than expected=5; App clutter and cross-selling=5; Market fall as the stated reason=2; Confusing numbers (XIRR, fund vs own return)=2; Cash crunch or life event=1; Anxiety from checking red numbers=0",
+    "findings": [
+      {
+        "headline": "App trust and operational issues accounted for 285 occurrences, making it the primary theme among drop events.",
+        "detail": "Users reported challenges such as delayed NAV updates, unexpected charges after cancellation, and restricted portfolio access due to paywalls or forced subscriptions. Note that this is drawn from a total sample size of 2,621 relevant items.",
+        "evidence_ids": [
+          "YO-26d1a85d39",
+          "PL-858b9bba68",
+          "PL-5ea4de5a4a",
+          "PL-bb4bce94ad"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Failed payment mandates represented 113 drop events, constituting 18% of the primary themes.",
+        "detail": "Investors frequently encountered technical hurdles like server failures, inability to switch default bank accounts, and unintended bank penalty charges for missed instalments. Note that this is drawn from a total sample size of 2,621 relevant items.",
+        "evidence_ids": [
+          "PL-b74ebd38d8",
+          "PL-74bcce9fdd",
+          "YO-b137b6df57",
+          "YO-6b1a8dff47"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Expectation mismatches drove 78 occurrences, representing 12% of the drop themes.",
+        "detail": "Negative returns over a one-year period and lower-than-expected performance led users to compare SIPs unfavorably against fixed deposits and seek guidance on exiting. Note that this is drawn from a total sample size of 2,621 relevant items.",
+        "evidence_ids": [
+          "YO-d6d01401ac",
+          "YO-e4e154da44"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Cash flow and life events accounted for 12 instances, representing 2% of the drop themes.",
+        "detail": "Unforeseen financial emergencies prompted investors to stop contributions, raising concerns about the safety of their previously deposited principal amounts. Note that this is drawn from a total sample size of 2,621 relevant items.",
+        "evidence_ids": [
+          "YO-ae2206c58a"
+        ],
+        "dropped_citations": 0
+      }
+    ]
+  },
+  "what_check": {
+    "question": "What do investors check, and how often, once they have started?",
+    "stats": "checks: xirr_or_return_pct: 130 (5%); current_vs_invested: 83 (3%); pnl_rupees: 65 (2%); fund_past_returns: 19 (1%); next_instalment: 18 (1%); one_day_change: 15 (1%); nothing: 1 (0%)\ncheck_frequency: daily: 18 (1%); rarely: 12 (0%); monthly: 10 (0%); multiple_daily: 1 (0%)",
+    "findings": [
+      {
+        "headline": "A total of 130 investors check their XIRR or return percentage, making it the most tracked metric among active users.",
+        "detail": "Users often observe daily fluctuations in XIRR metrics and may require clarification on how to interpret these varying returns correctly.",
+        "evidence_ids": [
+          "YO-53ffe37fa0",
+          "AP-23dc55a076",
+          "YO-3542af0b53"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Only 18 investors review their accounts daily, indicating that high-frequency monitoring is relatively uncommon.",
+        "detail": "Note that the small sample of active frequency metrics shows that very few users check their portfolios multiple times daily or monthly.",
+        "evidence_ids": [
+          "YO-1cdf12cad9",
+          "YO-1b605e89ea",
+          "YO-57c261b4b7"
+        ],
+        "dropped_citations": 0
+      }
+    ]
+  },
+  "confusion": {
+    "question": "What confuses or worries them inside the app?",
+    "stats": "confusions: mandate_process: 170 (6%); failure_reason: 112 (4%); nav_allotment_timing: 110 (4%); xirr: 98 (4%); tax_exit_load: 71 (3%); fund_vs_own_return: 65 (2%); pause_vs_stop: 61 (2%); value_down_while_investing: 52 (2%)\nemotions: confused: 849 (32%); frustrated: 589 (22%); confident: 391 (15%); neutral: 358 (14%); disappointed: 215 (8%); anxious: 207 (8%); regretful: 12 (0%)",
+    "findings": [
+      {
+        "headline": "A mandate process confusion accounts for 170 occurrences within the app usage data.",
+        "detail": "Users frequently encounter difficulties with automatic bank debits, expired mandates, and setting up payment authentication methods.",
+        "evidence_ids": [
+          "YO-2baed36ff3",
+          "YO-368ae89b76",
+          "TR-1c9b49d9f9",
+          "YO-b7e3b2bffe"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Confusion regarding XIRR is cited in 98 instances as users struggle to interpret the math.",
+        "detail": "Investors express uncertainty when negative percentages appear alongside positive NAV rates or when strategy returns seem contradictory.",
+        "evidence_ids": [
+          "TR-7fc8f5d409",
+          "YO-fa6b698a3b",
+          "YO-12e372a4f8",
+          "YO-731e7ea896"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Emotional sentiment data reveals that 849 respondents feel confused while navigating the platform.",
+        "detail": "This primary emotional state is compounded by frustration and anxiety when investment returns or app features do not match user expectations.",
+        "evidence_ids": [
+          "PL-9ca3f2028e",
+          "YO-2836e81f48",
+          "YO-3d1da877bc",
+          "YO-4d357c9c73"
+        ],
+        "dropped_citations": 0
+      }
+    ]
+  },
+  "outside_app": {
+    "question": "What do they do outside the app when they feel unsure?",
+    "stats": "outside_app_actions: youtube: 746 (28%); app_support: 114 (4%); google_search: 13 (0%); adviser: 2 (0%); reddit_forum: 2 (0%); asked_friend_family: 1 (0%)",
+    "findings": [
+      {
+        "headline": "A total of 746 users or 28% relied on YouTube outside the app when feeling unsure.",
+        "detail": "Users frequently turned to video platforms to resolve confusion regarding returns, metrics, and fund choices. Note that this is based on a total sample of 2621 items.",
+        "evidence_ids": [
+          "YO-9b73d78219",
+          "YO-e4f9eaa68d",
+          "YO-9b1a333a72",
+          "YO-b94fd7ed43"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Official app support accounted for 114 users or 4% of outside-app actions when facing uncertainty.",
+        "detail": "Users sought help for issues such as payment delays and app operations when they felt stuck. Note the small sample size relative to the overall dataset of 2621 items.",
+        "evidence_ids": [
+          "TR-99322b6c8a",
+          "AP-64c04ff75f",
+          "PL-a9b76d9c1d"
+        ],
+        "dropped_citations": 0
+      }
+    ]
+  },
+  "continuers": {
+    "question": "What separates investors who continue from those who quietly drop off?",
+    "stats": "continuers n=567, drop-offs n=642\ntheme share gap (drop minus continuers): App bugs, delays or poor support: 50% vs 5%; Failed instalment or mandate problem: 19% vs 1%; App clutter and cross-selling: 9% vs 1%; Cash crunch or life event: 2% vs 0%; Stopped or switched on others' advice: 2% vs 0%; Market fall as the stated reason: 12% vs 11%\ndrivers (continuers vs drop-offs): goal anchor: 9% vs 0%; automation set and forget: 13% vs 0%; understood volatility: 22% vs 0%; trusted person to ask: 1% vs 0%; small affordable amount: 4% vs 0%; saw recovery after dip: 13% vs 0%; step up with income: 3% vs 0%",
+    "findings": [
+      {
+        "headline": "App bugs, delays or poor support were cited by 50% of drop-offs compared to 5% of continuers.",
+        "detail": "Operational hurdles such as missing sale processes and unresponsive support severely frustrate users, pushing them to drop off.",
+        "evidence_ids": [
+          "PL-ac7638f225",
+          "PL-66e88ababc",
+          "TR-a3a60df326"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Failed instalments or mandate problems accounted for a 19% share among drop-offs versus 1% of continuers.",
+        "detail": "Technical payment issues and expired mandates create friction that disrupts ongoing investment habits.",
+        "evidence_ids": [
+          "YO-368ae89b76",
+          "TR-a3a60df326"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "App clutter and cross-selling drove a 9% share for drop-offs compared to just 1% for continuers.",
+        "detail": "Aggressive upselling and restricted features alienate users who expect clean and functional tracking experiences.",
+        "evidence_ids": [
+          "PL-405226943f",
+          "PL-66e88ababc",
+          "PL-5e6cae7932"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Market fall was noted as the stated reason by 12% of drop-offs and 11% of continuers.",
+        "detail": "While market downturns affect both groups similarly, prolonged portfolio losses often trigger doubt and withdrawals.",
+        "evidence_ids": [
+          "YO-befdc335ab",
+          "YO-3bc4dfaeef",
+          "YO-e32273795f"
+        ],
+        "dropped_citations": 0
+      }
+    ]
+  },
+  "segments": {
+    "question": "How do these patterns differ across user segments?",
+    "stats": "income: variable_freelance_business -> Irregular income vs fixed SIP 70% (n=20); salaried -> Cash crunch or life event 25% (n=69); student -> Doubt about the chosen fund 22% (n=27); salaried -> Doubt about the chosen fund 14% (n=69); student -> No personal goal behind the SIP 11% (n=27); variable_freelance_business -> No personal goal behind the SIP 5% (n=20)\nage_band: 18_22 -> Doubt about the chosen fund 22% (n=45); 29_35 -> No personal goal behind the SIP 17% (n=12); 23_28 -> Market fall as the stated reason 17% (n=6); 36_plus -> No personal goal behind the SIP 15% (n=33); 36_plus -> Doubt about the chosen fund 12% (n=33); 18_22 -> No personal goal behind the SIP 11% (n=45); 29_35 -> Cash crunch or life event 8% (n=12); 23_28 -> Failed instalment or mandate problem 0% (n=6)\ninfluencer: friend_family -> Doubt about the chosen fund 33% (n=9); finfluencer -> Doubt about the chosen fund 29% (n=209); self -> Doubt about the chosen fund 12% (n=184); friend_family -> Confusing numbers (XIRR, fund vs own return) 11% (n=9); self -> Market fall as the stated reason 9% (n=184); finfluencer -> Confusing numbers (XIRR, fund vs own return) 8% (n=209)\nmoney_source: side_income -> Irregular income vs fixed SIP 90% (n=10); parents_pocket_money -> Doubt about the chosen fund 40% (n=10); salary -> Cash crunch or life event 16% (n=123); salary -> Doubt about the chosen fund 14% (n=123); side_income -> Failed instalment or mandate problem 0% (n=10); parents_pocket_money -> Failed instalment or mandate problem 0% (n=10)",
+    "findings": [
+      {
+        "headline": "Irregular income creates clashes with fixed SIPs for 70% of respondents with variable freelance or business earnings.",
+        "detail": "Note that this segment relies on business profits rather than consistent monthly inflows, matching the stated need for lumpsum-suited options. The sample size for this specific subgroup is small (n=20).",
+        "evidence_ids": [
+          "YO-a051ed0a4f",
+          "YO-e789bd8520",
+          "YO-97aa6b7473"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Doubt about the chosen fund affects 40% of respondents who rely on parents' pocket money as their money source.",
+        "detail": "Younger demographics or those funded by pocket money frequently question their fund selection, though the sample size for this money source category is small (n=10).",
+        "evidence_ids": [
+          "YO-6a73347c4c",
+          "YO-6b2593e654",
+          "YO-52da19a379"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "A cash crunch or life event triggered issues for 25% of salaried respondents.",
+        "detail": "Salaried individuals attribute interruptions primarily to cash flow constraints or major life occurrences rather than market performance. Note the sample size for this segment is n=69.",
+        "evidence_ids": [
+          "YO-e4f9eaa68d",
+          "YO-086f11be3b",
+          "YO-bf3dd50f41"
+        ],
+        "dropped_citations": 0
+      }
+    ]
+  },
+  "unmet_needs": {
+    "question": "What unmet needs emerge consistently across conversations?",
+    "stats": "primary themes overall: app_trust_ops: 570 (22%); fund_choice_doubt: 336 (13%); positive_habit: 331 (13%); confusing_metrics: 331 (13%); expectation_mismatch: 221 (8%); failed_payment_mandate: 143 (5%); market_fall_trigger: 58 (2%); clutter_cross_sell: 55 (2%)",
+    "findings": [
+      {
+        "headline": "Operational issues and app trust concerns represent 570 mentions or 22% of overall primary themes.",
+        "detail": "Users struggle to locate their portfolio or SIPs after updates, and encounter obstacles regarding transparent withdrawal amounts and forced subscriptions.",
+        "evidence_ids": [
+          "PL-acec310595",
+          "PL-d0723bafc8",
+          "PL-17eaca64b7",
+          "PL-4d1c4f2560"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Fund choice doubt accounts for 336 occurrences, making up 13% of the analyzed conversations.",
+        "detail": "Investors seek guidance on selecting appropriate companies or schemes for long-term SIPs and require clarity on direct versus regular funds.",
+        "evidence_ids": [
+          "PL-73a1b908fd",
+          "YO-9841b1efc8"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Confusing metrics appear in 331 instances, corresponding to 13% of the total themes.",
+        "detail": "Users ask for explanations on how returns are calculated, including CAGR versus XIRR, and want to understand the consequences of missing SIP installments.",
+        "evidence_ids": [
+          "YO-3b89504303",
+          "YO-b3fdd91232",
+          "YO-7fcb20409a",
+          "YO-c512cbeb80"
+        ],
+        "dropped_citations": 0
+      },
+      {
+        "headline": "Expectation mismatches comprise 221 entries, representing 8% of the overall primary themes.",
+        "detail": "Conversations highlight distress over negative returns or daily portfolio losses observed after years of continuous investing.",
+        "evidence_ids": [
+          "YO-5af41e2b1e",
+          "YO-b5c6be31fa",
+          "YO-31cc6f6d8d",
+          "YO-16652a1e8c"
+        ],
+        "dropped_citations": 0
+      }
+    ]
+  },
+  "_meta": {
+    "citations_total": 89,
+    "citations_invalid": 0,
+    "model": "gemini-3.5-flash-lite"
+  }
+}

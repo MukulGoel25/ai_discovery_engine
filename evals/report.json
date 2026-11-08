@@ -1,0 +1,274 @@
+{
+  "generated": "2026-11-02T16:31",
+  "prompt_version": "v5",
+  "prompt_label": "v2",
+  "model": "gemini-3.5-flash-lite",
+  "golden_n": 30,
+  "fields": {
+    "is_relevant": {
+      "n": 30,
+      "agreement": 0.7666666666666667,
+      "kappa": 0.5374449339207048,
+      "scored_on": "all items",
+      "precision": 0.6875,
+      "recall": 0.8461538461538461
+    },
+    "event": {
+      "n": 13,
+      "agreement": 0.9230769230769231,
+      "kappa": 0.7547169811320754,
+      "scored_on": "items I marked relevant"
+    },
+    "primary_theme": {
+      "n": 13,
+      "agreement": 0.6153846153846154,
+      "kappa": 0.5289855072463767,
+      "scored_on": "items I marked relevant",
+      "lenient_agreement": 0.6153846153846154,
+      "confusion": {
+        "app_trust_ops": {
+          "app_trust_ops": 3,
+          "cash_flow_life_event": 0,
+          "expectation_mismatch": 0,
+          "fund_choice_doubt": 0,
+          "market_fall_trigger": 0,
+          "none": 0
+        },
+        "cash_flow_life_event": {
+          "app_trust_ops": 0,
+          "cash_flow_life_event": 1,
+          "expectation_mismatch": 0,
+          "fund_choice_doubt": 0,
+          "market_fall_trigger": 0,
+          "none": 0
+        },
+        "confusing_metrics": {
+          "app_trust_ops": 0,
+          "cash_flow_life_event": 1,
+          "expectation_mismatch": 0,
+          "fund_choice_doubt": 0,
+          "market_fall_trigger": 0,
+          "none": 0
+        },
+        "expectation_mismatch": {
+          "app_trust_ops": 0,
+          "cash_flow_life_event": 0,
+          "expectation_mismatch": 0,
+          "fund_choice_doubt": 0,
+          "market_fall_trigger": 1,
+          "none": 0
+        },
+        "fund_choice_doubt": {
+          "app_trust_ops": 0,
+          "cash_flow_life_event": 0,
+          "expectation_mismatch": 0,
+          "fund_choice_doubt": 1,
+          "market_fall_trigger": 0,
+          "none": 0
+        },
+        "market_fall_trigger": {
+          "app_trust_ops": 0,
+          "cash_flow_life_event": 0,
+          "expectation_mismatch": 1,
+          "fund_choice_doubt": 0,
+          "market_fall_trigger": 2,
+          "none": 0
+        },
+        "none": {
+          "app_trust_ops": 2,
+          "cash_flow_life_event": 0,
+          "expectation_mismatch": 0,
+          "fund_choice_doubt": 0,
+          "market_fall_trigger": 0,
+          "none": 1
+        }
+      }
+    },
+    "journey_stage": {
+      "n": 13,
+      "agreement": 0.9230769230769231,
+      "kappa": 0.7678571428571428,
+      "scored_on": "items I marked relevant"
+    },
+    "first_time_investor": {
+      "n": 13,
+      "agreement": 0.6923076923076923,
+      "kappa": -0.10638297872340408,
+      "scored_on": "items I marked relevant"
+    }
+  },
+  "disagreements": [
+    {
+      "id": "PL-cd41951614",
+      "field": "is_relevant",
+      "gold": false,
+      "ai": true,
+      "text": "it's been a good app till now, I've been using only Groww since 2020 and it helped me start my first sip, build stocks portfolio though I would like to request for one imp feature a customisable stock screener section would be a great addition to app",
+      "note": "Passing SIP mention; post is a stock-screener request"
+    },
+    {
+      "id": "YO-f304c88b07",
+      "field": "is_relevant",
+      "gold": false,
+      "ai": true,
+      "text": "2000 to 18000 in 5 years😅my sip",
+      "note": "seams sarcastic"
+    },
+    {
+      "id": "YO-b0f2578984",
+      "field": "is_relevant",
+      "gold": false,
+      "ai": true,
+      "text": "Mujhe to ye ghata ke souda lagra hai",
+      "note": "Ambiguous opinion ('looks like a losing deal'); no own SIP stated"
+    },
+    {
+      "id": "AP-92b3bb5131",
+      "field": "is_relevant",
+      "gold": true,
+      "ai": false,
+      "text": "Wrong Market cap Allocation Data\nIn networth section market cap allocation calculation is wrong and totally different from Market cap allocation in Mutal fund section.\nNote:-I only invested in equity mutual fund.",
+      "note": "Wrong allocation data for own equity MFs; could be confusing_metrics"
+    },
+    {
+      "id": "TR-7c8a10cc0c",
+      "field": "is_relevant",
+      "gold": true,
+      "ai": false,
+      "text": "Would a flexible SIP actually let you change the amount every month or is it just a marketing term?",
+      "note": "Question about varying SIP amount; possibly irregular_income, not stated | you wrote 'marketing stunt question' for primary_theme, mapped to 'none' | you wrote 'befor investing' for journey_stage, mapped to 'before_start'"
+    },
+    {
+      "id": "PL-6410b8973d",
+      "field": "is_relevant",
+      "gold": false,
+      "ai": true,
+      "text": "App watchlist is not syncing with website watchlist as I have only 4 watchlist in app but in website it is showing 6 watchlist. And try to add some features in watchlist like position changing from 3rd position I want a particular watchlist in 1st position. Developers please fix the issue. And also ",
+      "note": "Watchlist sync; SIP delete request is for stock SIPs. AI flagged as drop-off: likely AI error"
+    },
+    {
+      "id": "YO-643073f901",
+      "field": "is_relevant",
+      "gold": false,
+      "ai": true,
+      "text": "Amonth nahi arani kya kara",
+      "note": "Too ambiguous ('amount not coming, what to do?'); could be cash_flow"
+    },
+    {
+      "id": "YO-1d66613ee0",
+      "field": "event",
+      "gold": "considering_stop",
+      "ai": "none",
+      "text": "Bhai sip cancel or redeem m kya difference hai",
+      "note": "Knowledge question: cancel vs redeem | you wrote 'financial pressure' for primary_theme, mapped to 'cash_flow_life_event' | you wrote 'beginner' for journey_stage, mapped to 'unclear'"
+    },
+    {
+      "id": "PL-340872aa3e",
+      "field": "primary_theme",
+      "gold": "app_trust_ops",
+      "ai": "none",
+      "text": "hasselfree, can be handled by a person having basic understanding. After using the app for a while, I found that some important features are missing e.g SWP, PAUSING/ RESTARTING, STOPPING SIP, REDEMPTION as of now. Hopefully this will be addressed as soon as possible by providing related hasselfree ",
+      "note": "Missing pause/restart/stop SIP and redemption features"
+    },
+    {
+      "id": "AP-92b3bb5131",
+      "field": "primary_theme",
+      "gold": "app_trust_ops",
+      "ai": "none",
+      "text": "Wrong Market cap Allocation Data\nIn networth section market cap allocation calculation is wrong and totally different from Market cap allocation in Mutal fund section.\nNote:-I only invested in equity mutual fund.",
+      "note": "Wrong allocation data for own equity MFs; could be confusing_metrics"
+    },
+    {
+      "id": "YO-1d66613ee0",
+      "field": "primary_theme",
+      "gold": "cash_flow_life_event",
+      "ai": "confusing_metrics",
+      "text": "Bhai sip cancel or redeem m kya difference hai",
+      "note": "Knowledge question: cancel vs redeem | you wrote 'financial pressure' for primary_theme, mapped to 'cash_flow_life_event' | you wrote 'beginner' for journey_stage, mapped to 'unclear'"
+    },
+    {
+      "id": "YO-c385df21e6",
+      "field": "primary_theme",
+      "gold": "expectation_mismatch",
+      "ai": "market_fall_trigger",
+      "text": "Stop kar hi deni chahiye and cost to cost or profit mile to extra exit exit",
+      "note": "Hinglish: stop and exit at cost or profit; reason implied, uncertain"
+    },
+    {
+      "id": "YO-ba339a3320",
+      "field": "primary_theme",
+      "gold": "market_fall_trigger",
+      "ai": "expectation_mismatch",
+      "text": "Mutual funds continue rakhne ka koi concrete reason nahi hai. The only reason provided in this video is past stats. No idea or strategy is there which can push the Indian economy. Given the current political scenario, outlook for the next few years looks dim.",
+      "note": "Pessimistic economic outlook as reason to stop; general opinion, borderline relevance"
+    },
+    {
+      "id": "TR-7c8a10cc0c",
+      "field": "journey_stage",
+      "gold": "before_start",
+      "ai": "unclear",
+      "text": "Would a flexible SIP actually let you change the amount every month or is it just a marketing term?",
+      "note": "Question about varying SIP amount; possibly irregular_income, not stated | you wrote 'marketing stunt question' for primary_theme, mapped to 'none' | you wrote 'befor investing' for journey_stage, mapped to 'before_start'"
+    },
+    {
+      "id": "YO-09f6ffc345",
+      "field": "first_time_investor",
+      "gold": "unclear",
+      "ai": "no",
+      "text": "Njaan cheyyunund icici equity\nNippon multi cap\nIthu nalla companies aano\nNjaan nthellum change kond varano icici 1 yr aayi nippon 1 month ayathe ullu ippol last 3 4 months aayi icici nalla loss il aanu nthellum advise tharaavo",
+      "note": "Malayalam, tagged hinglish by detector; also mentions loss (expectation_mismatch secondary); asking whether to change funds"
+    },
+    {
+      "id": "TR-7c8a10cc0c",
+      "field": "first_time_investor",
+      "gold": "yes",
+      "ai": "unclear",
+      "text": "Would a flexible SIP actually let you change the amount every month or is it just a marketing term?",
+      "note": "Question about varying SIP amount; possibly irregular_income, not stated | you wrote 'marketing stunt question' for primary_theme, mapped to 'none' | you wrote 'befor investing' for journey_stage, mapped to 'before_start'"
+    },
+    {
+      "id": "AP-e95ef91f4f",
+      "field": "first_time_investor",
+      "gold": "no",
+      "ai": "unclear",
+      "text": "Poor app optimisation and sip feature\nApp is not good for sip management plus its very poorly optimised for small size iphones. Screen freezes or your keyboard doesn’t launch or your click doesn’t do any action.",
+      "note": "Poor SIP management and app freezes | you wrote 'invested in sip' for journey_stage, mapped to 'unclear'"
+    },
+    {
+      "id": "YO-b9404933c0",
+      "field": "first_time_investor",
+      "gold": "no",
+      "ai": "unclear",
+      "text": "Sir I was going to start new midcap sip now but the market sentiments are not in favor \nWhat should I do??\nPlease reply me sir\n🙏🏻🙏🏻",
+      "note": "Hesitating to start a new SIP due to sentiment; 'new' implies existing SIPs"
+    }
+  ],
+  "grounding": {
+    "all": 0.33350805923207966,
+    "relevant": 0.9694772987409386,
+    "n": 7631
+  },
+  "corrections": [
+    {
+      "id": "YO-0608de8a44",
+      "field": "is_relevant",
+      "ai_output": "True",
+      "your_correction": "False",
+      "why": "v1 counted a plain list of holdings as a SIP experience; relevance rule tightened in v2 prompt"
+    },
+    {
+      "id": "YO-1d24cbfab6",
+      "field": "event",
+      "ai_output": "considering_stop",
+      "your_correction": "none",
+      "why": "v1 read a feature question (can I lower the amount?) as intent to stop; v2 requires the writer to say they want to stop"
+    },
+    {
+      "id": "YO-09f6ffc345",
+      "field": "lang",
+      "ai_output": "hinglish",
+      "your_correction": "malayalam",
+      "why": "Keyword-based language detector mislabelled a Malayalam comment as Hinglish; kept as a known limitation"
+    }
+  ]
+}

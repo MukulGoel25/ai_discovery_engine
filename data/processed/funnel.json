@@ -1,0 +1,22 @@
+{
+  "funnel": {
+    "raw": 38737,
+    "after_length_filter": 21846,
+    "after_date_filter": 18855,
+    "after_dedupe": 18670,
+    "after_keyword_filter": 7631,
+    "sent_to_llm": 7631
+  },
+  "raw_by_source": {
+    "playstore": 24731,
+    "youtube": 9890,
+    "appstore": 2700,
+    "tradingqna": 1416
+  },
+  "by_source": {
+    "youtube": 5878,
+    "playstore": 1049,
+    "tradingqna": 392,
+    "appstore": 312
+  }
+}

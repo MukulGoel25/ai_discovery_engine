@@ -1,0 +1,4 @@
+id,field,ai_output,your_correction,why
+YO-0608de8a44,is_relevant,True,False,"v1 counted a plain list of holdings as a SIP experience; relevance rule tightened in v2 prompt"
+YO-1d24cbfab6,event,considering_stop,none,"v1 read a feature question (can I lower the amount?) as intent to stop; v2 requires the writer to say they want to stop"
+YO-09f6ffc345,lang,hinglish,malayalam,"Keyword-based language detector mislabelled a Malayalam comment as Hinglish; kept as a known limitation"

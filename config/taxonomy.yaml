@@ -1,0 +1,112 @@
+# ---------------------------------------------------------------
+# Theme taxonomy used by the extractor and the opportunity score.
+#  branch         = metric-tree branch the theme moves
+#                   A activation quality, B payment reliability,
+#                   C belief & understanding, D recovery,
+#                   X trigger / out of scope, none = not a problem theme
+#  addressability = 0-3, a PM judgement: can INDmoney act on this
+#                   WITHOUT recommending funds and WITHOUT fear/FOMO/urgency?
+# Run `python pipeline.py propose-taxonomy` to let the LLM suggest
+# additions from real data, then merge what you agree with here.
+# Changing ids means re-running extraction (cache is keyed on this file).
+# ---------------------------------------------------------------
+themes:
+  - id: failed_payment_mandate
+    label: Failed instalment or mandate problem
+    definition: An instalment failed, a mandate/autopay was not registered or expired, money debited but no units, bounce charges.
+    branch: B
+    addressability: 3
+    rationale: Plain-language failure reasons, one-tap retry and mandate repair are pure UX and ops.
+  - id: debit_date_mismatch
+    label: Debit date doesn't match cash flow
+    definition: SIP date falls before salary or when balance is low; the date was picked by default or at random.
+    branch: A
+    addressability: 3
+    rationale: Date suggestions tied to the user's own inflow are factual and non-advisory.
+  - id: expectation_mismatch
+    label: Returns lower than expected
+    definition: User expected a return (e.g., 12-15%, never a loss) that early results contradict; feels the SIP is 'not working'.
+    branch: C
+    addressability: 2
+    rationale: Realistic first-year context with historical ranges and caveats is possible; promising returns is not.
+  - id: confusing_metrics
+    label: Confusing numbers (XIRR, fund vs own return)
+    definition: Doesn't understand XIRR, absolute return, why own return differs from the fund's published return, NAV or allotment timing.
+    branch: C
+    addressability: 3
+    rationale: In-context explanations of the user's own numbers are education, not advice.
+  - id: check_anxiety
+    label: Anxiety from checking red numbers
+    definition: Frequent checking of daily changes or red values causes stress and an urge to stop to avoid the feeling.
+    branch: C
+    addressability: 2
+    rationale: Calmer default views and digests are product choices; information must not be hidden.
+  - id: no_goal_anchor
+    label: No personal goal behind the SIP
+    definition: Started because others did; no goal, so the SIP feels optional against other needs.
+    branch: A
+    addressability: 3
+    rationale: Letting users name a goal in their own words is neutral and user-led.
+  - id: cash_flow_life_event
+    label: Cash crunch or life event
+    definition: Expense spike, job change, wedding, rent deposit, medical cost or income drop makes the SIP the first thing cut.
+    branch: D
+    addressability: 2
+    rationale: Reduce, skip or pause-with-date options help; a genuine need to stop must be respected.
+  - id: irregular_income
+    label: Irregular income vs fixed SIP
+    definition: Freelance, gig, commission or business income doesn't fit a fixed amount and date.
+    branch: A
+    addressability: 2
+    rationale: Frequency and amount flexibility already exist; explaining them is non-advisory.
+  - id: pause_never_resumed
+    label: Paused and never resumed
+    definition: Paused or stopped 'temporarily' intending to restart, but did not; nothing prompted the restart.
+    branch: D
+    addressability: 3
+    rationale: User-chosen resume dates and reminders are neutral recovery mechanics.
+  - id: social_influence_churn
+    label: Stopped or switched on others' advice
+    definition: A friend, WhatsApp group or finfluencer prompted stopping, waiting for a crash, or switching.
+    branch: C
+    addressability: 1
+    rationale: Neutral official sources can be offered; countering with fund opinions cannot.
+  - id: market_fall_trigger
+    label: Market fall as the stated reason
+    definition: User cites a market fall, crash fears or wanting to time the market. Usually a trigger, rarely the root cause.
+    branch: X
+    addressability: 1
+    rationale: Fear and urgency messaging is banned; only neutral context is possible.
+  - id: fund_choice_doubt
+    label: Doubt about the chosen fund
+    definition: Unsure whether the fund is right, wants to switch, compares funds or portfolios.
+    branch: X
+    addressability: 0
+    rationale: Addressing this needs fund recommendations, which are out of scope.
+  - id: app_trust_ops
+    label: App bugs, delays or poor support
+    definition: Orders pending, units not allotted, status unclear, support unresponsive, app errors.
+    branch: B
+    addressability: 2
+    rationale: Status transparency is UX; root bug fixes sit with ops and engineering.
+  - id: clutter_cross_sell
+    label: App clutter and cross-selling
+    definition: Too many products, ads, notifications or pushes to other assets crowd out the SIP.
+    branch: C
+    addressability: 2
+    rationale: A quieter first-timer experience is a product choice.
+  - id: positive_habit
+    label: Steady habit (positive signal)
+    definition: Continuing calmly, automation, long-term view, saw recovery after a dip. Not a problem theme.
+    branch: none
+    addressability: 0
+    rationale: Used to compare continuers with drop-offs; not scored as an opportunity.
+
+continuation_drivers:
+  - goal_anchor
+  - automation_set_and_forget
+  - understood_volatility
+  - trusted_person_to_ask
+  - small_affordable_amount
+  - saw_recovery_after_dip
+  - step_up_with_income

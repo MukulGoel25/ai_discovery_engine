@@ -1,0 +1,105 @@
+# ---------------------------------------------------------------
+# What the discovery engine collects. Edit freely, then run:
+#   python pipeline.py collect
+# Verify Play Store IDs by opening:
+#   https://play.google.com/store/apps/details?id=<play_id>
+# ---------------------------------------------------------------
+date_from: "2024-01-01"          # widened from 2024-11-01 for more volume (note in Evidence Log)
+
+apps:
+  - name: INDmoney
+    play_id: in.indwealth
+    appstore_term: INDmoney        # resolved to an App Store id automatically
+  - name: Groww
+    play_id: com.nextbillion.groww
+    appstore_term: Groww
+  - name: Zerodha Kite
+    play_id: com.zerodha.kite3
+    appstore_term: Kite by Zerodha
+  # New: SIP-heavy apps. Verify each play_id on the Play Store URL; a wrong id is skipped with a warning.
+  - name: Paytm Money
+    play_id: com.paytmmoney
+    appstore_term: Paytm Money
+  - name: ET Money
+    play_id: com.smartspends
+    appstore_term: ET Money
+  - name: Kuvera
+    play_id: com.kuvera.android
+    appstore_term: Kuvera
+
+playstore:
+  country: in
+  langs: [en, hi]
+  reviews_per_app_per_lang: 4000   # newest first; filtered to SIP/MF content later
+
+appstore:
+  country: in
+  pages: 10                        # the RSS feed serves at most 10 pages x 50 reviews
+
+reddit:
+  subreddits: []                   # disabled: Reddit API needs approval. Use data/raw/manual/ for hand-copied comments.
+  queries: []
+
+tradingqna:
+  base_url: https://tradingqna.com
+  queries:
+    - SIP failed
+    - mandate SIP
+    - SIP stopped
+    - SIP paused
+    - first SIP
+    - Coin SIP not executed
+    - SIP not debited
+    - UPI autopay SIP
+    - SIP cancelled automatically
+    - SIP units not allotted
+    - SIP date change
+    - SIP amount change
+  topics_per_query: 25
+
+youtube:
+  # Needs YOUTUBE_API_KEY in .env (Google Cloud > enable YouTube Data API v3)
+  queries:
+    - should I stop my SIP
+    - SIP loss what to do
+    - SIP for beginners India
+    - SIP band karu ya nahi
+    - SIP negative return
+    - mutual fund SIP mistakes
+    - SIP band kar diya
+    - should I stop SIP now
+    - SIP loss 1 year
+    - SIP pause or stop
+    - SIP autopay failed
+    - first SIP experience
+    - SIP kab tak karna chahiye
+    - INDmoney SIP review
+    - SIP XIRR explained
+    - SIP me loss kyu ho raha hai
+  videos_per_query: 10
+  comments_per_video: 300
+  video_ids: []                    # optional: specific video IDs to always include
+
+# Keywords used to pre-filter app reviews and comments before the LLM sees them.
+keywords:
+  - sip
+  - systematic investment
+  - mutual fund
+  - mf
+  - mandate
+  - autopay
+  - auto pay
+  - nach
+  - xirr
+  - nav
+  - instalment
+  - installment
+  - step up
+  - step-up
+  - "एसआईपी"
+  - "म्यूचुअल"
+  - "सिप"
+
+limits:
+  max_items_for_llm: 8000          # raised from 2000; already-coded posts are reused from the cache
+  min_chars: 25
